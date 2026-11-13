@@ -1,0 +1,47 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pytest:*)",
+      "Bash(python -m pytest:*)",
+      "Bash(ruff:*)",
+      "Bash(python -m ruff:*)",
+      "Bash(alembic:*)",
+      "Bash(python -m alembic:*)",
+      "Bash(docker compose:*)",
+      "Bash(make:*)",
+      "Bash(python:*)",
+      "Bash(curl http://localhost*)",
+      "Bash(curl http://127.0.0.1*)",
+      "Bash(curl * http://localhost*)",
+      "Bash(curl * http://127.0.0.1*)"
+    ],
+    "ask": [
+      "Bash(rm:*)",
+      "Bash(del:*)",
+      "Bash(docker compose down -v*)",
+      "Bash(docker system prune:*)"
+    ],
+    "deny": [
+      "Bash(git:*)",
+      "Bash(git *)",
+      "Bash(gh:*)",
+      "Read(./.env)",
+      "Read(./.env.*.local)",
+      "Read(./.env.local)",
+      "Read(./.env.production)",
+      "Read(**/.env)",
+      "Edit(./.env)",
+      "Edit(**/.env)",
+      "Write(./.env)",
+      "Write(**/.env)",
+      "Bash(cat .env)",
+      "Bash(cat *.env)",
+      "Bash(type .env)",
+      "Bash(rm -rf /*)",
+      "Bash(rm -rf ~*)",
+      "Bash(rm -rf ..*)",
+      "Bash(rm -rf C:*)",
+      "Bash(rm -rf D:*)"
+    ]
+  }
+}

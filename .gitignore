@@ -1,0 +1,38 @@
+# Секреты и окружение (в репозитории только .env.example)
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.bandit
+
+# Тома данных и временные файлы
+data/
+volumes/
+pgdata/
+minio-data/
+tmp/
+*.tmp
+*.log
+
+# Редакторы и ОС
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Локальные настройки Claude Code (не общие)
+.claude/settings.local.json
